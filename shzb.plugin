@@ -1,0 +1,17 @@
+#!name = 神户Crack
+#!desc = Crack神户及去广告
+#!openUrl = 
+#!author = spirit
+#!homepage = https://github.com/Avenswen/Loon/shzb.plugin
+#!icon = 
+
+
+[Rewrite]
+^http[s]?:\/\/gitee\.com\/ReactJSTeams\/next.js\/raw\/master\/examples\/nested-components\/.gitignore reject-200
+
+[Script]
+http-response ^http[s]?:\/\/.*\.liuniukeji\.(heshuangde|cdwksjx)\.com\/index\.php\/App\/(Account\/Login|User\/Info|Index\/Update|Host\/Info).*$ script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/shzb.js, requires-body = true
+http-request ^http[s]?:\/\/.*\.liuniukeji\.(heshuangde|cdwksjx)\.com\/index\.php\/App\/User\/Info.*$ script-path=https://raw.githubusercontent.com/WeiRen0/Scripts/main/shtk.js, requires-body = true
+
+[Mitm]
+hostname = *cdwksjx*,*heshuangde*,gitee.com
