@@ -1,1 +1,1 @@
-# Quantumult_X
+# for myself
