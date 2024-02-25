@@ -1,0 +1,17 @@
+#!name = QianysjCrack
+#!desc = QianysjVipCrack
+#!openUrl = 
+#!author = spirit  
+#!homepage = https://github.com/Avenswen/Loon/QianysjVip.plugin 
+#!icon = https://raw.githubusercontent.com/Avenswen/Loon/main/icon/spirit.png
+
+
+[Script]
+
+# > 饭橘减肥解锁永久会员
+http-response ^https?:\/\/funjoy-api\.aiyouaiyou\.cn\/api\/User\/GetInfoByCode$ script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/qysj.js, requires-body=true, tag=QianysjCrack
+
+
+[MITM]
+
+hostname = app.thwlqy.com
