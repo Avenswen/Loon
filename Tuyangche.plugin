@@ -1,15 +1,14 @@
 #!name = 途虎养车
-#!desc = 途虎养车签到.
+#!desc = 途虎养车签到
 #!openUrl = 
 #!author = spirit
 #!homepage = 
 #!icon = https://raw.githubusercontent.com/chxm1023/Task/main/icon/hljk.png
 
 [rewrite_local]
-https:\/\/api.tuhu.cn\/User\/GetInternalCenterInfo script-path= https://raw.githubusercontent.com/Crazy-Z7/Task/main/Tuhyche.js
+http-response https:\/\/api.tuhu.cn\/User\/GetInternalCenterInfo script-path= https://raw.githubusercontent.com/Crazy-Z7/Task/main/Tuhyche.js
 
 [task_local]
-
 cron "10 0 * * ?" script-path= https://raw.githubusercontent.com/Crazy-Z7/Task/main/Tuhyche.js, timeout=300, tag=途虎养车签到, img-url= https://raw.githubusercontent.com/Crazy-Z7/Task/main/Image/IMG_0905.jpeg
 
 [MITM]
