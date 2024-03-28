@@ -14,4 +14,4 @@ http-response ^https?:\/\/gameapi.mma.dstor.cc\/index.php\/App\/(Account\/Login|
 http-request ^https://www\.shenhu\.click script-path=https://t.me/GieGie777, requires-body = true
 
 [Mitm]
-hostname = gameapi.mma.dstor.cc
+hostname = gameapi.mma.dstor.cc,*.flare.com.51kuajing.net
